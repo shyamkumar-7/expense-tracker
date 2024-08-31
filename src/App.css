@@ -1,38 +1,119 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #17181F;
+  color: #ddd;
+}
+
+main{
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+h1{
   text-align: center;
+  color: #fff;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form input{
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+  height: 1.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form input[type="datetime-local"]{
+  color: #777;
+}
+
+.basic{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+form button{
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transactions{
+  margin-top: 15px;
+}
+
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+.transaction:first-child{
+  border-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.name{
+  font-size: 1rem;
+}
+
+.description{
+  font-size: .7rem;
+  color: #888;
+  margin-bottom: .8rem;
+}
+
+.datetime{
+  font-size: .7rem;
+  color: #888;
+  
+}
+
+.right{
+  text-align: right;
+}
+
+.red{
+  color: #c11;
+}
+
+.green{
+  color: #1c1;
+}
+
+.datetime{
+  margin-bottom: 10px;
+}
+
+.loading{
+  color: #51eb09;
+}
+
+.delete_button{
+  background: none;
+  cursor: pointer;
+  /* font-size: 15px; */
+  /* border-radius: 5px; */
+  border: none;
+  
+}
+
+.delete_button:hover{
+  cursor: pointer; 
+  font-size: 20px;
 }
